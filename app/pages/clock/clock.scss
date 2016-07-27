@@ -1,0 +1,56 @@
+.clock-page, .new-clock-page, .help-page, .settings-page {
+  ion-header {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .8);
+    .toolbar-background {
+      background-color: #000000;
+    }
+
+    button {
+      color: #f4f4f4;
+    }
+
+    .toolbar-title {
+      color: #f4f4f4;
+    }
+  }
+
+  ion-content {
+    background-color: #303030;
+    color: #ffffff;
+  }
+
+  ion-footer {
+    display: flex;
+    .button-dark {
+      background-color: #272D33;
+      font-size: 1.7rem;
+      border-top:1px solid #494a4c;
+      border-left: 1px solid #494a4c;
+    }
+  }
+
+  ion-item, [ion-item] {
+    background-color: transparent;
+    color: #ffffff;
+    padding-right: 16px;
+    ion-label {
+      h3 {
+        font-size: 1.7rem;
+      }
+    }
+    &:first-child {
+      border-top: 0;
+    }
+
+    &:last-child {
+      border-bottom: 0;
+      .item-inner {
+        border-bottom: 1px solid #555;
+      }
+    }
+
+    .item-inner {
+      border-color: #555;
+    }
+  }
+}

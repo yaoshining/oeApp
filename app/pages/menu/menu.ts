@@ -7,6 +7,10 @@ import {PlaylistPage} from '../playlist/playlist';
 import {LibraryPage} from '../library/library';
 import {LocalPage} from '../local/local';
 import {NeteasePage} from '../netease/netease';
+import {MusicServicesPage} from '../music-services/music-services';
+import {ClockPage} from '../clock/clock';
+import {HelpPage} from '../help/help';
+import {SettingsPage} from '../settings/settings';
 import {MenuController, NavController} from "ionic-angular/index";
 @Component({
   templateUrl: 'build/pages/menu/menu.html'
@@ -14,7 +18,7 @@ import {MenuController, NavController} from "ionic-angular/index";
 export class MenuPage {
   private rootPage: any;
   private menus: any[];
-  constructor(private menu: MenuController) {
+  constructor(private menu: MenuController, private nav: NavController) {
     this.rootPage = HomePage;
 
     this.menus = [{
@@ -45,22 +49,34 @@ export class MenuPage {
       page: NeteasePage
     }, {
       title: '添加音乐服务',
-      imageUrl: 'img/add_track.png'
+      imageUrl: 'img/add_track.png',
+      page: MusicServicesPage,
+      push: true
     }, {
       title: '闹钟',
-      imageUrl: 'img/clock.png'
+      imageUrl: 'img/clock.png',
+      page: ClockPage,
+      push: true
     }, {
       title: '帮助',
-      imageUrl: 'img/help.png'
+      imageUrl: 'img/help.png',
+      page: HelpPage,
+      push: true
     }, {
       title: '设置',
-      imageUrl: 'img/settings.png'
+      imageUrl: 'img/settings.png',
+      page: SettingsPage,
+      push: true
     }];
   }
 
   openPage(menu) {
     if(menu.page) {
-      this.rootPage = menu.page;
+      if(menu.push) {
+        this.nav.rootNav.push(menu.page)
+      } else {
+        this.rootPage = menu.page;
+      }
     }
     this.menu.close();
   }

@@ -5,7 +5,7 @@ import {TabsPage} from './pages/tabs/tabs';
 import {InitPage} from './pages/init/init';
 
 @Component({
-  template: '<ion-nav [root]="rootPage"></ion-nav>'
+  template: '<ion-nav swipeBackEnabled="true" [root]="rootPage"></ion-nav>'
 })
 export class MyApp {
 
@@ -28,5 +28,6 @@ export class MyApp {
 }
 
 ionicBootstrap(MyApp, [], {
+  backButtonText: '',
   pageTransition: 'ios'
 });
