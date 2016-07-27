@@ -1,0 +1,41 @@
+.init-page {
+  ion-content {
+    background-color: #000000;
+    color: #ffffff;
+  }
+
+  .oe-logo {
+    color: #ffffff;
+    flex: 1 1 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    font-family: "Chalkboard";
+    font-weight: 600;
+    letter-spacing: .3rem;
+  }
+
+  .oe-setting-buttons {
+    flex: 1 1 200px;
+  }
+
+  .oe-page-bottom {
+    flex: 0 1 auto;
+  }
+
+  .oe-button {
+    border-color: #ffffff;
+  }
+
+  .oe-page-wrapper {
+    padding: 0 10vw;
+  }
+}
+
+.welcome-page {
+  .oe-wel-text {
+    flex: 1 1 auto;
+    font-size: 1.8rem;
+  }
+}

@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-navbar>
+    <button start dark (click)="close()">
+      <ion-icon name="ios-arrow-down"></ion-icon>
+    </button>
+
+    <ion-title>办公室 <ion-icon class="ion-md-arrow-dropdown"></ion-icon></ion-title>
+
+    <ion-buttons end>
+      <button dark>
+        <ion-icon name="search"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div class="oe-page-wrapper">
+    <div class="album-art">
+      <img src="img/deep_joy.jpg" />
+      <div class="oe-album-progress">
+        <div class="progressbar"></div>
+      </div>
+      <div class="oe-player-time">
+        <span class="current" pull-left>0:07</span>
+        <span class="diff" pull-right>-3:43</span>
+      </div>
+    </div>
+    <div class="track-info">
+      <div>Felicity</div>
+      <div class="gray">Isaac Shepard</div>
+      <div class="gray">Deep Joy</div>
+      <button>
+        <ion-icon name="md-more"></ion-icon>
+      </button>
+    </div>
+    <div class="oe-player-controls">
+      <div>
+        <button dark>
+          <ion-icon name="ios-rewind"></ion-icon>
+        </button>
+        <button dark>
+          <ion-icon name="ios-play"></ion-icon>
+        </button>
+        <button dark>
+          <ion-icon name="ios-fastforward"></ion-icon>
+        </button>
+      </div>
+      <div>
+        <img class="volume-button" src="img/volume-mute.png" />
+        <div class="oe-player-progress">
+          <div class="progressbar">
+          </div>
+        </div>
+        <img class="playlist-button" src="img/player_list.png" />
+      </div>
+    </div>
+  </div>
+</ion-content>

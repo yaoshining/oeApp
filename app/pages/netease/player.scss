@@ -1,0 +1,121 @@
+.player-page {
+
+  button {
+    margin: 0;
+    background-color: transparent;
+    color: #ffffff;
+    height: auto;
+  }
+
+  ion-navbar {
+    .toolbar-title {
+      color: #ffffff;
+    }
+
+    .toolbar-content {
+      display: flex;
+    }
+  }
+
+  .toolbar-background {
+    background: transparent;
+    border-color: transparent;
+  }
+
+  ion-content {
+    background-color: #010101;
+    color: #ffffff;
+  }
+
+  .oe-page-wrapper {
+    padding: 0 15px;
+  }
+
+  .album-art {
+    margin-bottom: 1.5em;
+  }
+
+  .oe-player-controls {
+    padding: 15px 0;
+    & > :first-child {
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+      justify-content: center;
+      & > button {
+        margin: 0 10px;
+        font-size: 1.5em;
+        color: #646464;
+      }
+    }
+    & > :last-child {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .oe-player-progress {
+    flex: 1 1 auto;
+    margin: 0 15px;
+    height: 3px;
+    background-color: #1A1A1A;
+    & > .progressbar {
+      background-color: #EAEAEA;
+      height: 100%;
+      width: 19%;
+      position: relative;
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: -7.5px;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: #EAEAEA;
+        transform: translateY(-6px);
+      }
+    }
+  }
+
+  .volume-button, .playlist-button {
+    height: 1.3em;
+  }
+
+  .track-info {
+    position: relative;
+    & > button {
+      position: absolute;
+      right: 0;
+      top: 15px;
+      color: #9c9c9c;
+    }
+  }
+
+  .oe-album-progress {
+    background-color: #373B3E;
+    height: 2px;
+    margin-bottom: 8px;
+    & > .progressbar {
+      background-color: #E42D40;
+      height: 100%;
+      width: 19%;
+      position: relative;
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: -6.5px;
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+        background-color: #E42D40;
+        transform: translateY(-5.5px);
+      }
+    }
+  }
+
+  .oe-player-time {
+    font-family: "sans-serif";
+  }
+}

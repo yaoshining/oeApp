@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>歌单</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h3>
+    <ion-icon name="arrow-back" nav-pop></ion-icon>
+    钢琴
+  </h3>
+  <ion-list>
+    <button ion-item>
+      <ion-thumbnail item-left>
+        <img src="img/all_music.png" />
+      </ion-thumbnail>
+      所有歌曲
+    </button>
+    <button ion-item (click)="openActionSheet()">
+      <ion-thumbnail item-left>
+        <img src="img/deep_joy.jpg" />
+      </ion-thumbnail>
+      <div class="track-info">
+        <div>Felicity</div>
+        <div class="gray">Isaac Shepard</div>
+      </div>
+    </button>
+    <button ion-item>
+      <ion-thumbnail item-left>
+        <img src="img/between_worlds.png" />
+      </ion-thumbnail>
+      <div class="track-info">
+        <div>Between Worlds</div>
+        <div class="gray">Roger Subirana</div>
+      </div>
+    </button>
+  </ion-list>
+</ion-content>

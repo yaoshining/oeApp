@@ -1,0 +1,82 @@
+// http://ionicframework.com/docs/v2/theming/
+
+
+// App Shared Imports
+// --------------------------------------------------
+// These are the imports which make up the design of this app.
+// By default each design mode includes these shared imports.
+// App Shared Sass variables belong in app.variables.scss.
+
+@import "../pages/about/about";
+
+@import "../pages/contact/contact";
+
+@import "../pages/home/home";
+
+@import "../pages/init/init";
+
+@import "../pages/menu/menu";
+
+@import "../pages/netease/player";
+
+.oe-page-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.oe-button {
+  display: block;
+  border: 1px solid #000000;
+  text-align: center;
+  padding: .3em 0;
+  font-size: 1.8rem;
+  color: #ffffff;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+
+  &.button-danger {
+    background-color: #ef2b2d;
+    border-color: #ef2b2d;
+  }
+}
+
+.white {
+  color: #ffffff;
+}
+
+.gray {
+  color: #9c9c9c;
+}
+
+[pull-right] {
+  float: right;
+}
+
+[pull-left] {
+  float: left;
+}
+
+.player-mini {
+  background-color: #010101;
+  color: #ffffff;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+
+  button {
+    margin: 0;
+    background-color: transparent;
+  }
+
+  .track-info {
+    padding: 0 10px;
+  }
+}
+
+.track-info {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+}

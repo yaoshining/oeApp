@@ -1,0 +1,74 @@
+.menu-page {
+  .guide-text {
+    position: absolute;
+    top: 40%;
+    left: 15vw;
+    right: 15vw;
+    transform: translate(0, -50%);
+    font-size: 1.8rem;
+    &:before {
+      display: block;
+      font-family: "Ionicons";
+      -webkit-font-smoothing: antialiased;
+      content: '\f4b3';
+      text-align: center;
+      font-size: 30vw;
+      margin-bottom: 1rem;
+      color: #e2e2e2;
+    }
+  }
+
+  ion-thumbnail {
+    min-width: 4.5rem;
+    min-height: 4.5rem;
+    & > img {
+      max-width: 4.5rem;
+      max-height: 4.5rem;
+    }
+  }
+
+  .menu-content ion-item,  .menu-content [ion-item] {
+    &:first-child {
+      border-top: none;
+    }
+
+    &:last-child {
+      border-bottom: none;
+      .item-inner {
+        border-bottom: 1px solid #c8c7cc;
+      }
+    }
+  }
+
+  .menu-content {
+    height: calc(100% - 68px);
+    ion-header {
+      visibility: hidden;
+    }
+  }
+
+  ion-menu {
+    ion-item, [ion-item] {
+      &:last-child {
+        border-bottom: none;
+      }
+
+      .item-inner {
+        border-bottom: 0;
+      }
+    }
+  }
+}
+
+//.platform-android .menu-page {
+//  ion-menu {
+//    top: 5.6rem;
+//  }
+//}
+//
+//.platform-ios .menu-page {
+//  ion-menu {
+//    top: 44px;
+//    box-shadow: none;
+//  }
+//}
